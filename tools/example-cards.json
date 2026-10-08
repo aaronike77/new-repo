@@ -1,0 +1,8 @@
+[
+  {"id": "1-mon", "category": "Insurance", "headline": "Customers are okay with AI. They just want a real person when it counts.", "source": "InsuranceNewsNet", "theme": "dark"},
+  {"id": "2-tue", "category": "Voice AI", "headline": "No more 6-hour holds: eHealth's AI voice agent now picks up every call", "source": "CX Dive", "theme": "dark", "video": true},
+  {"id": "3-wed", "category": "Insurance", "headline": "39% of homeowners thought they were covered for weather damage. They weren't.", "source": "Insurance Journal", "theme": "dark"},
+  {"id": "4-thu", "category": "Conversation AI", "headline": "Lowe's shoppers who use its AI helper buy at 3x the rate", "source": "CX Dive", "theme": "dark", "video": true},
+  {"id": "5-fri", "category": "AI for Good", "headline": "Free AI glasses that read and describe the world for blind veterans", "source": "Axios Des Moines", "theme": "light"},
+  {"id": "6-sat", "category": "AI & Opportunity", "headline": "74% of small businesses are trying AI. Most need help making it work.", "source": "CIO.com", "theme": "dark"}
+]
