@@ -1,0 +1,27 @@
+name: Fetch holiday images
+on:
+  push:
+    branches: [holiday-image-fetch]
+    paths: [holiday-fetch/urls.txt]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download images
+        run: |
+          mkdir -p holiday-fetch/out
+          while read -r name url; do
+            [ -z "$name" ] && continue
+            curl -fsSL -o "holiday-fetch/out/$name.jpg" "$url"
+          done < holiday-fetch/urls.txt
+          ls -la holiday-fetch/out
+      - name: Commit images to this branch
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add holiday-fetch/out
+          git commit -m "Add fetched holiday images"
+          git push
