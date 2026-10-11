@@ -88,9 +88,17 @@ def card(spec, top=0):
     logo = logo.resize((lw, int(logo.height * lw / logo.width)), Image.LANCZOS)
     ly = S - M - logo.height + 10
     im.paste(logo, (M - 18, ly), logo)
-    cta = "dualincomenetwork.com"
-    cf = font("Medium", 27)
-    d.text((S - M - d.textlength(cta, font=cf), ly + logo.height // 2 - 18), cta, font=cf, fill=t["accent"])
+    # Business/AI cards carry a "join" call to action; set "cta": false for
+    # general greetings (holidays, have-a-good-weekend) to show the plain site.
+    cy = ly + logo.height // 2
+    if spec.get("cta", True):
+        label, url = spec.get("cta_label", "Join the network"), "join.dualincomenetwork.com"
+        lf, cf = font("Medium", 23), font("Bold", 25)
+        d.text((S - M - d.textlength(label, font=lf), cy - 38), label, font=lf, fill=t["muted"])
+        d.text((S - M - d.textlength(url, font=cf), cy - 6), url, font=cf, fill=t["accent"])
+    else:
+        url, cf = "dualincomenetwork.com", font("Medium", 27)
+        d.text((S - M - d.textlength(url, font=cf), cy - 18), url, font=cf, fill=t["accent"])
     return im
 
 
