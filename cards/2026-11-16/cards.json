@@ -1,0 +1,31 @@
+[
+ {
+  "id": "1-mon",
+  "category": "AI + Insurance",
+  "headline": "One Michigan agency says roughly 1 in 5 new prospects used AI first",
+  "source": "IA Magazine",
+  "theme": "dark"
+ },
+ {
+  "id": "2-wed",
+  "category": "Voice AI",
+  "headline": "Urgent care chain's AI receptionist: calls ending in a booking rose 11% to 34%",
+  "source": "CX Dive",
+  "theme": "dark",
+  "video": true
+ },
+ {
+  "id": "3-fri",
+  "category": "AI + Jobs",
+  "headline": "19.1% of U.S. workers surveyed say AI replaced them, then they were asked back",
+  "source": "Fortune",
+  "theme": "dark"
+ },
+ {
+  "id": "4-sun",
+  "category": "AI + Insurance",
+  "headline": "\"We are not using AI to replace people\": how one agency uses it instead",
+  "source": "Insurance Journal",
+  "theme": "dark"
+ }
+]
