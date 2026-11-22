@@ -1,0 +1,17 @@
+[
+ {
+  "id": "1-tue",
+  "category": "AI + Insurance",
+  "headline": "74% of insurance agents usually or always send AI content to clients unedited",
+  "source": "CFOtech",
+  "theme": "dark"
+ },
+ {
+  "id": "2-sat",
+  "category": "AI + Business",
+  "headline": "35% of consumers plan to use AI to help find small businesses",
+  "source": "Small Business Trends",
+  "theme": "dark",
+  "video": true
+ }
+]
